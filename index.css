@@ -1,0 +1,559 @@
+@import "utility.css";
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+  --secondary: #070606;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: var(--dark);
+  height: 700px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.brandname {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.logoimage {
+  height: 30px;
+}
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media(min-width:576px){
+  .container{
+    max-width: 540px
+  }
+}
+@media(min-width:768px){
+  .container{
+    max-width: 720px
+  }
+}
+@media(min-width:992px){
+  .container{
+    max-width: 960px
+  }
+}
+@media(min-width:1200px){
+  .container{
+    max-width: 1152px
+  }
+}
+
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+header nav .left a:hover {
+  color: var(--primary);
+  transition: 0.3s ease;
+}
+header nav {
+  padding: 2rem 0;
+}
+header nav .branding {
+  margin-right: 3rem;
+}
+div button a{
+  text-decoration: none;
+  color: var(--pure);
+}
+.headcontact{
+  color: var(--dark);
+}
+.hero {
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+.hero .left img {
+  width: 400px;
+  /* margin: 30px 70px 100px 0px; */
+}
+.hero .right {
+  color: var(--pure);
+  margin-top: -4rem;
+}
+.hero .right h6 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero .right h1 span {
+  color: var(--primary);
+}
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+.aboutme {
+  padding: 6rem 0;
+}
+section .aboutme-img {
+  height: 450px;
+}
+.aboutme-span {
+  color: var(--primary);
+}
+section h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+section .container .flex-1 h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+section .container .flex-1 p {
+  font-family: "lato", sans-serif;
+  color: var(--ternary);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+.logos {
+  display: flex;
+}
+.logoimage {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-left: 0.4rem;
+  transition: all 0.3s ease;
+}
+.logoimage img {
+  height: 100%;
+  width: 100%;
+  padding: 0.3rem;
+}
+.logoimage:hover {
+  background-color: var(--primary);
+}
+
+.section-heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+  padding-top: 3rem;
+}
+.section-heading span {
+  color: var(--primary);
+  font-weight: 600;
+}
+.section-heading + p {
+  text-align: center;
+  color: var(--ternary);
+  font-family: "lato" sans-serif;
+  margin-bottom: 8rem;
+}
+.imghobbies {
+  width: 110px;
+  height: 107px;
+  background-color: var(--primary);
+  padding: 1rem;
+}
+section .container .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+  padding-bottom: 3rem;
+}
+section.my-hobbies {
+  background: var(--light);
+}
+section.my-hobbies .card-wrapper .card {
+  background: var(--pure);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 5rem;
+  text-align: center;
+  transition: all o.3s ease;
+}
+section.my-hobbies .card-wrapper .card:hover {
+  color: var(--pure);
+  background-color: var(--dark);
+}
+
+section.my-hobbies .card-wrapper .card img {
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section.my-hobbies .card-wrapper .card h2 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+section.my-hobbies .card-wrapper .card p {
+  font-family: "lato", sans-serif;
+  color: var(--ternary);
+  line-height: 1.6;
+}
+section.cvresume {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/mineall/myportfolio/images/camera.png);
+  color: var(--pure);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+  padding-bottom: 18rem;
+  padding-top: 9rem;
+}
+section.cvresume h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+section.cvresume p {
+  font-family: "lato", sans-serif;
+  margin-bottom: 2rem;
+}
+section.work {
+  background: var(--light);
+}
+section.work .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+section.work .card-wrapper .card {
+  position: relative;
+  height: 250px;
+}
+section.work .card-wrapper .card img {
+  height: 100%;
+  width: 100%;
+}
+section.work .card-wrapper .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(61, 207, 211, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+section.work .card-wrapper .card .overlay:hover {
+  opacity: 100%;
+}
+section.work .card-wrapper .card .overlay span {
+  color: var(--light);
+}
+section.work .card-wrapper .card .overlay a {
+  color: var(--ternary);
+  text-decoration: none;
+}
+
+section .skills {
+  background: var(--dark);
+  padding-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+}
+
+section .skills .section-heading {
+  color: var(--pure);
+}
+
+section .skills img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .skills .card-wrapper {
+  padding: 0 5rem 5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+}
+section .skills .card-wrapper .card {
+  background-color: var(--pure);
+}
+section .skills .card-wrapper .card-content {
+  padding: 3rem;
+}
+section .skills .card-wrapper .card-content h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+section .skills .card-wrapper .card-content a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+section .skills .card-wrapper .card-content a:hover {
+  color: var(--primary);
+}
+section .skills .card-wrapper .card-content span {
+  color: var(--ternary);
+  font-size: 0.8rem;
+}
+section .skills .card-wrapper .card-content p {
+  font-family: "lato", sans-serif;
+  color: var(--ternary);
+  margin: 1rem 0;
+}
+section .skills .card-wrapper .card-content a.readmore {
+  font-size: 0.8rem;
+}
+
+section.contact .card-wrapper img {
+  height: 60px;
+}
+section.contact .padding1 {
+  padding: 7rem;
+}
+section.contact .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-bottom: 4rem;
+}
+section.contact .card-wrapper .card {
+  text-align: center;
+}
+section.contact .card-wrapper .card h1 {
+  font-weight: 400;
+}
+section.contact .card-wrapper .card h6 {
+  font-size: 1rem;
+  color: var(--ternary);
+  font-weight: 400;
+}
+section.contact .input-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+section.contact .input-wrap-1 {
+  display: flex;
+  flex-direction: column;
+}
+section.contact .input-wrap-1 input {
+  margin-bottom: 2rem;
+  border: 1px solid var(--light);
+  font-size: 0.9rem;
+}
+section.contact input {
+  padding: 0.5rem;
+  border: 1px solid var(--light);
+  font-size: 0.9rem;
+}
+section.contact input:focus,
+section.contact .input-wrap-1 textarea:focus {
+  outline: none;
+}
+section.contact .input-wrap-1 textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--light);
+  font-size: 0.9rem;
+}
+
+section.contact .btn-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+footer {
+  background-color: var(--dark);
+  text-align: center;
+  padding: 5rem 0;
+}
+.footerimg {
+  height: 45px;
+  width: 45px;
+  background-color: var(--pure);
+  border-radius: 50%;
+}
+.footer-logo {
+  width: 60px;
+  border-radius: 80%;
+}
+footer span {
+  color: var(--pure);
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.footerdiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+footer .footer-social a {
+  margin-right: 1.4rem;
+}
+footer .footer-social {
+  margin-bottom: 3rem;
+  margin-right: -2.3rem;
+}
+footer .copyright {
+  color: var(--ternary);
+}
+@media  (max-width:1024px){
+  header #display-nav{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .right{
+    padding-top: 50px;
+  } 
+}
+.sitemap{
+  position: relative;
+}
+.hamburger{
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  z-index: 1;
+  border: none;
+  background: none;
+  cursor: pointer ;
+  display: none;
+}
+.mobile-navbar{
+z-index: 2;
+position: fixed;
+top: 0;
+left: 0;
+background-color: var(--light);
+width: 100%;
+/* height: 100%; */
+padding: 2rem;
+padding-top: 5rem;
+transform: translateX(-100%);
+transition: all .5s ease-in-out;
+}
+.open{
+  transform: translateX(0);
+}
+.times{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  border: none;
+  background-color: none;
+  outline: none;
+  cursor: pointer;
+
+}
+.mobile-navbar ul{
+  list-style: none;
+}
+.mobile-navbar ul a{
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 2rem;
+}
+@media(max-width:1024px){
+  .hamburger{
+    display: block;
+  }
+  .hero .left img{
+    width: 260px;
+  }
+  .hero .right h1{
+    font-size: 3rem;
+  }
+  .hero{
+    padding-top: 8rem;
+  }
+  header{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 90%, 0 100%);
+  }
+  section .aboutme-img {
+    height: 371px;
+  }
+  section .container .card-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.work .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section .skills .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section .skills {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 96%, 0 100%);
+  }
+}
+@media(max-width:576px){
+  .hero{
+    flex-direction: column;
+  }
+  header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 98%, 0 100%);
+  }
+  .aboutme .container{
+    flex-direction: column;
+  }
+  section .container .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.cvresume {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 95%, 0 100%);
+  }
+  section .skills {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 100%, 0 100%);
+  }
+  section.contact .padding1 {
+    padding: 2rem;
+  }
+  section.contact .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.contact .input-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section .skills .card-wrapper {
+    padding: 0rem 0rem;
+  }
+  .hero .right {
+    position: absolute;
+    top: 260px;
+  }
+  .hero .left{
+    margin-top: -2rem;
+    margin-right: -11rem;
+  }
+}
